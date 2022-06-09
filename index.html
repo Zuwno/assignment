@@ -63,9 +63,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-footer ml-[25%] md:ml-[0%] md:mt-8  ">
+                <div class="content-footer ml-[25%] md:ml-[0%] md:mt-8   ">
                     <span class="ml-[70px] md:ml-28   ">Featured works</span>
-                    <div class="item md:flex md:ml-28">
+                    <div class="item sm:flex md:ml-28 ">
                         <div class="img mr-4  md:pt-0 md:w-60"><a href=""><img src="imgs/home/Rectangle 30dashboard.jpg" alt=""></a></div>
                         <div class="content w-[250px] md:w-[800px]">
                             <p class="text-2xl mb-4 text-blue-900 w-[300px] md:w-[400px]"><b><a href="">Designing Dashboards</a></b></p>
@@ -78,8 +78,8 @@
                         </div>
                     </div>
                     <hr class="mt-8">
-                    <div class="item flex md:ml-28 mt-8">
-                        <div class="img mr-4 w-[200px] pt-16 md:pt-0 md:w-60"><a href=""><img src="imgs/home/Rectangle 32lllustration.jpg" alt=""></a></div>
+                    <div id="itemhidden" class="item sm:flex md:ml-28 ">
+                        <div class="img img mr-4  md:pt-0 md:w-60"><a href=""><img src="imgs/home/Rectangle 32lllustration.jpg" alt=""></a></div>
                         <div class="content w-[250px] md:w-[800px]">
                             <p class="text-2xl mb-4 text-blue-900 w-[250px] md:w-[400px]	"><b><a href="">Vibrant Portraits of 2020</a></b></p>
                             <span class="mr-4  rounded-2xl px-2 bg-[#142850] text-white"><a href="">2018</a></span>
@@ -91,8 +91,8 @@
                         </div>
                     </div>
                     <hr class="mt-8">
-                    <div class="item flex md:ml-28 mt-8 ">
-                        <div class="img mr-4 w-[200px] pt-16 md:pt-0 md:w-60"><a href=""><img src="imgs/home/Rectangle 34typography.jpg" alt=""></a></div>
+                    <div id="itemhidden2" class="item sm:flex md:ml-28 ">
+                        <div class="img img mr-4  md:pt-0 md:w-60"><a href=""><img src="imgs/home/Rectangle 34typography.jpg" alt=""></a></div>
                         <div class="content w-[250px] md:w-[800px]">
                             <p class="text-2xl mb-4 text-blue-900 w-[250px] md:w-[400px]	"><b><a href="">36 Days of Malayalam type</a></b></p>
                             <span class="mr-4 rounded-2xl px-2 bg-[#142850] text-white"><a href="">2018</a></span>
@@ -124,6 +124,8 @@
         const Menuo2 = document.getElementById('hidmenu2');
         const Menuo3 = document.getElementById('hidmenu3');
         const button = document.getElementById('button');
+        const itemh = document.getElementById('itemhidden');
+        const itemh2 = document.getElementById('itemhidden2');
         
         function hiddenMenu() {
             Menuo.classList.toggle('hidden')
