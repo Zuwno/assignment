@@ -19,10 +19,11 @@
         <div class="container m-auto">
             <div class="header mx-auto mb-28">
                 <div class="h-menu mb-40 mt-4">
-                    <ul class="flex justify-end mr-60">
-                        <li class="mr-4"><a href="works.html"><b>Works</b></a></li>
-                        <li class="mr-4"><a href="blog.html"><b>Blog</b></a></li>
-                        <li class="mr-4"><a href=""><b>Contact</b></a></li>
+                    <ul class="flex justify-end mr-8 md:mr-60">
+                        <li id="hidmenu" class="mr-4"><a href="works.html"><b>Works</b></a></li>
+                        <li id="hidmenu2" class="mr-4"><a href="blog.html"><b>Blog</b></a></li>
+                        <li id="hidmenu3"  class="mr-4 pr-16 md:pr-0"><a href=""><b>Contact</b></a></li>
+                        <li><button onclick="hiddenMenu()"><img class="md:hidden 2" src="imgs/home/menumenumobile.svg" alt=""></button></li>
                     </ul>
                 </div>
                 <div class="h-content md:grid md:grid-cols-2  ml-24 ">
@@ -90,7 +91,7 @@
                         </div>
                     </div>
                     <hr class="mt-8">
-                    <div class="item flex md:ml-28 mt-8">
+                    <div class="item flex md:ml-28 mt-8 ">
                         <div class="img mr-4 w-[200px] pt-16 md:pt-0 md:w-60"><a href=""><img src="imgs/home/Rectangle 34typography.jpg" alt=""></a></div>
                         <div class="content w-[250px] md:w-[800px]">
                             <p class="text-2xl mb-4 text-blue-900 w-[250px] md:w-[400px]	"><b><a href="">36 Days of Malayalam type</a></b></p>
@@ -118,7 +119,20 @@
             </div>
         </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script>
+        const Menuo = document.getElementById('hidmenu');
+        const Menuo2 = document.getElementById('hidmenu2');
+        const Menuo3 = document.getElementById('hidmenu3');
+        const button = document.getElementById('button');
+        
+        function hiddenMenu() {
+            Menuo.classList.toggle('hidden')
+            Menuo2.classList.toggle('hidden')
+            Menuo3.classList.toggle('hidden')
+            button.classList.toggle('ml-[180px]')
+
+        }
+    </script>
 </body>
 
 </html>

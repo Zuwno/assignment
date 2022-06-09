@@ -20,9 +20,10 @@
         <div class="header mb-20 ml-8 text-center">
             <div class="menu ">
                 <ul class="flex text-1xl  md:justify-end">
-                    <li><a href="blog.html" class="mr-4 ">Blog</a></li>
-                    <li><a href="works.html" class="mr-4 text-[#FF6464]">Works</a></li>
-                    <li><a href="" class="mr-4">Contact</a></li>
+                    <li id="hidmenu"><a href="blog.html" class="mr-4 ">Blog</a></li>
+                    <li id="hidmenu2"><a href="works.html" class="mr-4 text-[#FF6464]">Works</a></li>
+                    <li id="hidmenu3"><a href="" class="mr-4">Contact</a></li>
+                    <li id="button"><button onclick="hiddenMenu()"><img class="md:hidden ml-48 mt-2" src="imgs/home/menumenumobile.svg" alt=""></button></li>
                 </ul>
             </div>
         </div>
@@ -59,7 +60,20 @@
             <p class="mx-auto mt-4 ml-32 md:ml-60">Copyright ©2020 All rights reserved </p>
         </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script>
+        const Menuo = document.getElementById('hidmenu');
+        const Menuo2 = document.getElementById('hidmenu2');
+        const Menuo3 = document.getElementById('hidmenu3');
+        const button = document.getElementById('button');
+        
+        function hiddenMenu() {
+            Menuo.classList.toggle('hidden')
+            Menuo2.classList.toggle('hidden')
+            Menuo3.classList.toggle('hidden')
+            button.classList.toggle('ml-[180px]')
+
+        }
+    </script>
 </body>
 
 </html>
